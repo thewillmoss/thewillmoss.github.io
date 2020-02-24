@@ -1,0 +1,19 @@
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+<div class="row">
+    <div class="column left">
+        <div class = "left_image">
+            <img src="{{ site.url }}/{{ include.image }}" alt="{{ include.title }}">
+        </div>
+    </div>
+    <div class="column right">
+        <h3>
+            <a class="post-link" href="{{ include.url | relative_url }}">
+                {{ include.title | escape }}
+            </a>
+        </h3>
+        <p>
+            {{ include.desc }}
+        </p>
+        <span class="post-meta">    {{ include.date | date: date_format }}</span>
+    </div>
+</div>
