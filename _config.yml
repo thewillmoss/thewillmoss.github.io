@@ -7,3 +7,6 @@ header_pages:
   - /blog.md
   - /resume.md
   - /portfolio.md
+sass:
+  sass_dir: assets/css
+  style: :compressed
